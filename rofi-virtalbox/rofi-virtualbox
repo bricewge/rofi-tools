@@ -2,7 +2,7 @@
 
 # rofi-virtualbox: manage virtualbox machines with rofi
 
-OPTIONS="Start machine\nPower-off machine\n"
+OPTIONS="Start machine\nPower-off machine"
 
 # function definitions
 ######################
