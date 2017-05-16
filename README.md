@@ -57,8 +57,8 @@ action to be executed afterwards.
 ### TODO
 
 * config file
-* pause/clone/delete machine
-* better way of handling options and corresponding functions
+* pause/clone machine
+* better way of handling options and corresponding functions - like boosta
 
 # License
 
