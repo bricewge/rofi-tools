@@ -2,7 +2,7 @@
 
 # rofi-virtualbox: manage virtualbox machines with rofi
 
-OPTIONS="Start machine\nPower-off machine\nDelete machine"
+OPTIONS="Start machine\nPower-off machine\nClone machine\nDelete machine"
 
 # function definitions
 ######################
@@ -21,6 +21,11 @@ function startVM()
 function poweroffVM()
 {
   vboxmanage controlvm "$1" acpipowerbutton --type headless
+}
+
+function cloneVM()
+{
+  vboxmanage clonevm "$1" --mode machine --register --options keepallmacs
 }
 
 function deleteVM()
@@ -49,6 +54,9 @@ do
       ;;
     "Power-off machine")
       poweroffVM "$vm"
+      ;;
+    "Clone machine")
+      cloneVM "$vm"
       ;;
     "Delete machine")
       deleteVM "$vm"

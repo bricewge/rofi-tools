@@ -51,13 +51,13 @@ You can use it with herbstluftwm as well:
 
 ## rofi-virtualbox
 
-Provides a menu to start, power-off etc. virtualbox machines. You select the machine first and the
+Provides a menu to start, power-off, clone, delete etc. virtualbox machines. You select the machine first and the
 action to be executed afterwards.
 
 ### TODO
 
 * config file
-* pause/clone machine
+* pause machine
 * better way of handling options and corresponding functions - like boosta
 
 # License
